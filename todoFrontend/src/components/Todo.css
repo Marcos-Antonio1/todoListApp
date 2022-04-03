@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.container-card{
+    margin-top:50px;
+    width:45vw;
+}
+.title {
+    border:bold;
+    padding:10px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.list {
+    margin-top:20px;
+}
+
+.footer{
+  display:flex;
+}
+
+.btn-clear-activities{
+    weight:20%;
+    height:40%;
+}
+.btn-delete{
+    margin-left: 50px; 
+}
+.icon-check {   
+    margin-right:20px;
+}
+
+.icon-square{
+    margin-right:20px;
+}
+.check{
+    width: 30px;
+    height: 30px;
+}
+.activitie {
+    font-size:23px;
+    border:bold;
+    padding:10px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
