@@ -56,3 +56,39 @@ export {
     AuthContext,
     AuthProvider
 }
+
+===========================================================================================================================================================
+
+
+
+const Teste1 = () =>{
+    const navigation = useNavigation()
+    
+    const {setLogged} = useContext(AuthContext)
+
+    async function deslogar(){
+       await AsyncStorage.removeItem('nome')
+       await AsyncStorage.removeItem('logged')
+       await AsyncStorage.removeItem('token')
+       setLogged(false);
+    }
+
+    return(
+        <View>
+            <Text>
+                Sou a tela 
+            </Text>
+            <Button
+                onPress={()=>{
+                    deslogar()
+                    //navigation.navigate('teste2')
+
+                }}
+                title="Ir para a tela2"
+            />
+        </View>
+    )
+}
+
+
+export default Teste1;
